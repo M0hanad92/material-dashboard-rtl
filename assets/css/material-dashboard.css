@@ -13,7 +13,7 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  
  */
- 
+
 /* ANIMATION */
 /* SHADOWS */
 /* Shadows (from mdl http://www.getmdl.io/) */
@@ -435,7 +435,7 @@ h2.title {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
@@ -638,7 +638,7 @@ h2.title {
 .main-panel {
   position: relative;
   z-index: 2;
-  float: right;
+  float: left;
   overflow: auto;
   width: calc(100% - 260px);
   min-height: 100%;
@@ -1481,7 +1481,7 @@ blockquote p {
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family:  "tahoma","Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -5063,3 +5063,49 @@ footer .btn {
     margin-right: -20px;
   }
 }
+
+/* RTL CSS */
+
+.navbar-header,.navbar-nav,.navbar-right {
+  float: left!important;
+}
+
+.navbar-right .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.card-nav-tabs .nav-tabs-title {
+  float: right;
+  padding: 10px 0 10px 10px;
+}
+
+.table .radio, .table .checkbox {
+  margin-right: 10px;
+}
+
+.checkbox label {
+  padding-right: 0;
+}
+
+.checkbox input[type=checkbox] {
+  right: 0;
+}
+
+.checkbox .checkbox-material {
+  padding-right: 5px;
+}
+
+.checkbox .checkbox-material:before {
+  right: 0;
+}
+
+.checkbox .checkbox-material .check:before {
+  margin-right: 10px;
+}
+
+.pull-left {
+  float: right!important;
+}
+
+
